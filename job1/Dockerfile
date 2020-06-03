@@ -4,7 +4,7 @@ RUN yum install httpd -y
 RUN yum install php -y
 RUN yum install /sbin/service -y
 
-COPY root/ws2/job1/web  /var/www/html
+COPY -r /root/ws2/job1/web  /var/www/html
 
 EXPOSE 80
 
